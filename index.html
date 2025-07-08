@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cửa hàng SHO</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="icon/fontawesome-free-6.7.2-web/css/all.min.css">
+</head>
+<body>
+    <header>
+        <!-- thương hiệu -->
+        <div class="logo">
+            <p>SHO</p>
+        </div>
+        
+        <!-- thanh menu -->
+        <div class="menu">
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="details/Products.html">Sản phẩm</a></li>
+            <li><a href="#" id="contactLink">Liên hệ</a></li>      
+        </div>
+
+        <!-- phần khác -->
+        <div class="others">
+            <li><input id="search-item" type="Text" placeholder=" Tìm kiếm..."> <i class="fa-solid fa-magnifying-glass"></i></li>
+            <li> <a href="account/signIn.html" class="fa-solid fa-user" title="Đăng nhập" id="userIcon"></a></li>
+            <li> <a href="details/cart.html" class="fa-solid fa-cart-shopping" title="Giỏ hàng"></a></li>
+        </div>  
+    </header>
+   
+    <main>
+        <!-- banner 1-->
+        <input class="banner-img" onclick="MuaHang()" src="https://file.hstatic.net/1000230642/file/1920x1080.png" type="image">
+
+        <!-- tiêu đề trên slider -->
+        <h2><i>KHÁM PHÁ</i></h2>
+
+        <div class="slider">
+            <div class="list">
+                <div class="items">
+                    <img src="image/index1.jpg">
+                </div>
+                <div class="items">
+                    <img src="image/index2.jpg">
+                </div>
+                <div class="items">
+                    <img src="image/index3.jpg">
+                </div>
+                <div class="items">
+                    <img src="image/index4.jpg">
+                </div>
+                <div class="items">
+                    <img src="image/index5.jpg">
+                </div>
+            </div>
+
+            <!-- Nút trước và sau -->
+            <div class="button">
+                <button id ="prev"><</button>
+                <button id="next">></button>
+            </div>
+        </div>
+
+        <!-- tiêu đề dưới slider -->
+        <h2><i>DÒNG SẢN PHẨM</i></h2>
+        <div class="dongsanpham">
+            <div class="product-item">
+                <img class="item-img" onclick="item1()" src="image/item-1.jpg" alt="item 1">
+            </div>
+            <div class="product-item">
+                <img class="item-img" onclick="item2()" src="image/item-2.jpg" alt="item 2">
+            </div>
+            <div class="product-item">
+                <img class="item-img" onclick="item3()" src="image/item-3.jpg" alt="item 3">
+            </div>
+            <div class="product-item">
+                <img class="item-img" onclick="item4()" src="image/item-4.jpg" alt="item 4">
+            </div>
+            <div class="product-item">
+                <img class="item-img" onclick="item5()" src="image/item-5.jpg" alt="item 5">
+            </div>
+            <div class="product-item">
+                <img class="item-img" onclick="item6()" src="image/item-6.jpg" alt="item 6">
+            </div>
+        </div>
+
+        <!-- banner 2 ảnh dưới items -->
+         <h2><i>NỔI BẬT</i></h2>
+         <div class="last-banner">
+            <input class="banner-2" onclick="MuaHang()" src="https://file.hstatic.net/1000230642/file/1000_x_1157_-_hunter_nam.jpg" type="image">
+            <input class="banner-2" onclick="MuaHang()" src="https://file.hstatic.net/1000230642/file/1000_x_1157_-_hunter_nu.jpg" type="image">
+        </div>
+
+    </main>
+
+    <footer id="lienhe">
+            <div class="footer-left">
+                <h3>LIÊN HỆ</h3>
+                <p><strong>Địa chỉ:</strong> Âu Cơ, Tân Bình, Thành phố Hồ Chí Minh.</p>
+                <p><strong>fanpage</strong> SHO Store - Official.</p>
+                <p><strong>Email:</strong> chamsockhachhang@sho-official.com.vn.</p>
+                <p><strong>Hotline:</strong> 0123456789.</p>
+            </div>
+            <div class="footer-right">
+                <h4>&copy; 2025 SHO, Inc. All rights reserved.</h4>
+            </div>
+    </footer>
+    <script src="js/index.js"></script>
+    <script src="js/search.js"></script>
+</body>
+</html>

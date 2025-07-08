@@ -1,0 +1,424 @@
+/* all */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+a:hover {
+    color: #808080;
+}
+
+/* Header */
+header {
+    padding: 20px 50px;
+    height: 70px;
+    position: relative;
+    background-color: #F8F8FF;
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+
+/* Logo */
+.logo {
+    float: left;
+    width: 25%;
+    font-weight: bolder;
+}
+
+.logo > p {
+    margin-top: -5%;
+    font-size: 50px;
+    font-style: oblique;
+}
+
+/* Menu */
+.menu {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    white-space: nowrap;
+}
+
+.menu > li {
+    padding: 0 12px;
+    display: inline-block;
+    margin-right: 24px;
+}
+
+.menu > li:last-child {
+    margin-right: 0;
+}
+
+.menu > li > a:hover {
+    color: #000000;
+    border: none;
+    border-bottom: 2px solid #000000;
+} 
+
+/* Others */
+.others {
+    float: right;
+    width: 25%;
+    text-align: right;
+}
+
+.others > li {
+    display: inline-block;
+    padding: 0 12px;
+    border: none;
+    border-right: 2px solid #000000;
+}
+
+.others > li:last-child {
+    border-right: none;
+}
+
+.others > li:first-child {
+    position: relative;
+}
+
+.others > li:first-child input {
+    width: 100%;
+    height: 125%;
+    border: none;
+    border-bottom: 1px solid #333;
+    background-color: #F8F8FF;
+}
+
+.others > li:first-child i {
+    position: absolute;
+    right: 15px;
+    top: 55%;
+    transform: translateY(-50%);
+}
+
+/* Main */
+main {
+    margin: 0;
+    font-family: monospace;
+}
+
+.banner-img {
+    width: 100%;
+    cursor: pointer;
+}
+
+h2 {
+    margin-top: 30px;
+    font-size: 25px;
+    margin-left: 55px;
+    margin-bottom: 25px;
+}
+
+/* Slider */
+.slider {
+    width: 100%;
+    max-width: 66.666vw;
+    height: 600px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    background-color: #f0f0f0;
+}
+
+.list {
+    position: relative;
+    transition: left 0.5s ease-out;
+    left: 0;
+    height: 100%;
+    white-space: nowrap;
+}
+
+.list > img, .items img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    max-width: 1300px;
+    background-color: transparent;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.items {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.list > img {
+    max-width: 100vw;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Slider Buttons */
+.button {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%);
+    padding: 0 20px;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.button > button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(207, 207, 207, 0.8);
+    color: #1C1C1C;
+    border: none;
+    font-family: monospace;
+    font-weight: bolder;
+    font-size: 24px;
+    cursor: pointer;
+    pointer-events: auto;
+    transition: background-color 0.3s;
+}
+
+.button > button:first-child {
+    float: left;
+}
+
+.button > button:last-child {
+    float: right;
+}
+
+.button > button:hover {
+    background-color: #E8E8E8;
+}
+
+/* san pham */
+.dongsanpham {
+    overflow: hidden;
+    margin-left: -10px;
+    margin-right: -10px;
+    padding: 5px 10px;
+}
+
+.product-item {
+    float: left;
+    width: calc(16.666% - 20px);
+    margin: 10px;
+}
+
+.item-img {
+    width: 100%;
+    height: auto;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.item-img:hover {
+    transform: scale(1.05);
+}
+
+/* banner cuoi */
+.last-banner {
+    overflow: hidden;
+    padding: 0 20px;
+    margin-top: 40px;
+    margin-right: -20px;
+}
+
+.banner-2 {
+    width: 49%;
+    height: auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    object-fit: cover;
+}
+
+/* Footer */
+footer {
+    position: relative;
+    background-color: #F8F8FF;
+    padding: 40px 80px;
+    overflow: hidden;
+}
+
+.footer-left {
+    float: left;
+    width: 70%;
+    text-align: left;
+}
+
+.footer-left p {
+    margin: 6px 0;
+    line-height: 1.6;
+}
+
+.footer-right {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    text-align: right;
+}
+
+.footer-right p, .footer-right h4 {
+    margin: 0;
+}
+
+/* Responsive */
+/* Android */
+@media (max-width: 600px) {
+    header {
+        padding: 10px 20px;
+        height: auto;
+    }
+
+    .logo {
+        float: none;
+        width: 100%;
+        font-size: 30px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .menu {
+        position: static;
+        width: 70%;
+        text-align: center;
+        margin-left: 50%;
+    }
+
+    .menu > li {
+        display: inline-block;
+        padding: 15px 0;
+        margin-right: 15px;
+    }
+
+    .menu > li:last-child {
+        margin-bottom: 0;
+    }
+
+    .others {
+        float: none;
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .others > li {
+        padding: 0 8px;
+    }
+    
+    .others > li:first-child input {
+        width: 100%;
+    }
+    
+    .slider {
+        max-width: 100vw;
+        height: 300px;
+    }
+
+    .list > img, .items img {
+        max-width: 100vw;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .dongsanpham {
+        padding: 5px 0;
+        margin-left: 5px;
+        margin-right: 0;
+        
+    }
+
+    .product-item {
+        float: inline-start;
+        width: 47%;
+        margin: 10px 5px;
+    }
+
+    .last-banner {
+        padding: 0;
+    }
+
+    .banner-2 {
+        width: 100%;
+    }
+
+    footer {
+        padding: 20px 20px;
+    }
+
+    .footer-left {
+        float: none;
+        width: 100%;
+        transform: translateX(0);
+        text-align: center;
+    }
+
+    .footer-right {
+        position: static;
+        text-align: center;
+        padding: 10px 0;
+    }
+}
+
+/* Tablet */
+@media (min-width: 601px) and (max-width: 1024px) {
+    header {
+        padding: 10px 5px;
+        height: auto;
+    }
+
+    .menu {
+        left: 45%;
+    }
+
+    .menu > li {
+        display: inline-block;
+        margin-right: 5px;
+    }
+
+    .others {
+        float: none;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .others > li:first-child input {
+        width: 70%;
+    }
+
+    .product-item {
+        width: calc(50% - 20px);
+        float: left;
+        margin: 10px;
+    }
+
+    .footer-left {
+        width: 50%;
+        transform: translateX(40px);
+    }
+
+    .footer-right {
+        float: right;
+        position: static;
+        padding: 0;
+    }
+}

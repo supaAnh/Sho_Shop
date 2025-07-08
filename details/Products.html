@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cửa hàng SHO</title>
+    <link rel="stylesheet" href="../css/Products.css">
+    <link rel="stylesheet" href="../icon/fontawesome-free-6.7.2-web/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <p>SHO</p>
+        </div>
+        
+        <div class="menu">
+            <li><a href="../index.html">Trang chủ</a></li>
+            <li><a href="Products.html">Sản phẩm</a></li>
+            <li><a href="#" id="contactLink">Liên hệ</a></li>      
+        </div>
+
+        <div class="others">
+            <li><input id="searchInput" type="Text" placeholder=" Tìm kiếm..."> <i class="fa-solid fa-magnifying-glass"></i></li>
+            <li> <a href="signIn.html" class="fa-solid fa-user" id="userIcon"></a></li>
+            <li> 
+                <a href="cart.html" class="fa-solid fa-cart-shopping"></a>
+                <span class="cart-counter"></span>
+            </li>
+        </div>  
+    </header>
+   
+    <main>
+        <h2><i>Sản phẩm mới</i></h2>
+
+        <aside class="filter-panel">
+            <h3>Lọc sản phẩm</h3>
+            <div class="filter-group">
+                <h4>Khoảng giá</h4>
+                <label><input type="radio" name="price-filter" class="price-filter" value="0-500000"> Dưới 500.000đ</label>
+                <label><input type="radio" name="price-filter" class="price-filter" value="500000-800000"> 500.000đ - 800.000đ</label>
+                <label><input type="radio" name="price-filter" class="price-filter" value="800000-1000000"> 800.000đ - 1.000.000đ</label>
+                <label><input type="radio" name="price-filter" class="price-filter" value="1000000-10000000"> Trên 1.000.000đ</label>
+                <label><input type="radio" name="price-filter" class="price-filter" value="all" checked> Tất cả</label>
+            </div>
+        </aside>
+
+        <div class="product_list">
+                <div class="product_items">
+                    <img src="../image/item-1.jpg" alt="Sản phẩm 1">
+                    <p>Giày Thể Thao Biti's Hunter Core Nam Màu Đen HSM009000DEN</p>
+                    <p>850,000 ₫</p>
+                    <button><a href="item-1.html"><b>Xem chi tiết</b></a></button>
+                    <button onclick="addToCart('Giày Thể Thao Biti\'s Hunter Core Nam Màu Đen HSM009000DEN', 850000, 'HSM009000DEN')"><b>Thêm vào giỏ</b></button>
+                </div>
+                <div class="product_items">
+                    <img src="../image/item-2.jpg" alt="Sản phẩm 2">
+                    <p>Giày Thể Thao Biti's Helio Teen Nam Màu Xanh Dương BSB007400XDG</p>
+                    <p>595,000 &#8363;</p>
+                    <button><a href="item-2.html"><b>Xem chi tiết</b></a></button>
+                    <button onclick="addToCart('Giày Thể Thao Biti\'s Helio Teen Nam Màu Xanh Dương BSB007400XDG', 595000, 'BSB007400XDG')"><b>Thêm vào giỏ</b></button>
+                </div>
+                <div class="product_items">
+                    <img src="../image/item-3.jpg" alt="Sản phẩm 3">
+                    <p>Giày Thể Thao Biti's Nam Màu Cam HSM005400CAM</p>
+                    <p>865,000 &#8363;</p>
+                    <button><a href="item-3.html"><b>Xem chi tiết</b></a></button>
+                    <button onclick="addToCart('Giày Thể Thao Biti\'s Nam Màu Cam HSM005400CAM', 865000, 'HSM005400CAM')"><b>Thêm vào giỏ</b></button>
+                </div>
+                <div class="product_items">
+                    <img src="../image/item-4.jpg" alt="Sản phẩm 4">
+                    <p>Giày Thể Thao Biti's Hunter Core Nam Màu Xanh Dương Lợt HSM007800XDL</p>
+                    <p>869,000 &#8363;</p>
+                    <button><a href="item-4.html"><b>Xem chi tiết</b></a></button>
+                    <button onclick="addToCart('Giày Thể Thao Biti\'s Hunter Core Nam Màu Xanh Dương Lợt HSM007800XDL', 869000, 'HSM007800XDL')"><b>Thêm vào giỏ</b></button>
+                </div>
+                <div class="product_items">
+                    <img src="../image/item-5.jpg" alt="Sản phẩm 5">
+                    <p>Giày Thể Thao Biti's Hunter Core Nam Màu Nâu HSM006200NAU</p>
+                    <p>746,000 &#8363;</p>
+                    <button><a href="item-5.html"><b>Xem chi tiết</b></a></button>
+                    <button onclick="addToCart('Giày Thể Thao Biti\'s Hunter Core Nam Màu Nâu HSM006200NAU', 746000, 'HSM006200NAU')"><b>Thêm vào giỏ</b></button>
+                </div>
+                <div class="product_items">
+                    <img src="../image/item-6.jpg" alt="Sản phẩm 6">
+                    <p>Giày Thể Thao Biti's Hunter Core Nam Màu Trắng HSM006200TRG</p>
+                    <p>746,000 &#8363;</p>
+                    <button><a href="item-6.html"><b>Xem chi tiết</b></a></button>
+                    <button onclick="addToCart('Giày Thể Thao Biti\'s Hunter Core Nam Màu Trắng HSM006200TRG', 746000, 'HSM006200TRG')"><b>Thêm vào giỏ</b></button>
+                </div> 
+                <div class="product_items">
+                    <img src="../image/item-7.jpg" alt="Sản phẩm 7">
+                    <p>Giày Thể Thao Biti's Hunter Layered Upper Nam Màu Trắng DSMH02800TRG</p>
+                    <p>919,770 &#8363;</p>
+                    <button><a href="item-7.html"><b>Xem chi tiết</b></a></button>
+                    <button onclick="addToCart('Giày Thể Thao Biti\'s Hunter Layered Upper Nam Màu Trắng DSMH02800TRG', 919770, 'DSMH02800TRG')"><b>Thêm vào giỏ</b></button>
+                </div> 
+                <div class="product_items">
+                    <img src="../image/item-8.jpg" alt="Sản phẩm 8">
+                    <p>Giày Thể Thao Biti's Hunter Street Nam Màu Xanh Lá Đậm HSM008600XLD</p>
+                    <p>746,000 &#8363;</p>
+                    <button><a href="item-8.html"><b>Xem chi tiết</b></a></button>
+                    <button onclick="addToCart('Giày Thể Thao Biti\'s Hunter Street Nam Màu Xanh Lá Đậm HSM008600XLD', 746000, 'HSM008600XLD')"><b>Thêm vào giỏ</b></button>
+                </div> 
+                <div class="product_items">
+                    <img src="../image/item-9.jpg" alt="Sản phẩm 9">
+                    <p>Giày Thể Thao Biti’s LỬA Nam Màu Đỏ HSM004204DOO</p>
+                    <p>1,279,000  &#8363;</p>
+                    <button><a href="item-9.html"><b>Xem chi tiết</b></a></button>
+                    <button onclick="addToCart('Giày Thể Thao Biti’s LỬA Nam Màu Đỏ HSM004204DOO', 1279000, 'HSM004204DOO')"><b>Thêm vào giỏ</b></button>
+                </div> 
+                <div class="product_items">
+                    <img src="../image/item-10.jpg" alt="Sản phẩm 10">
+                    <p>Giày Thể Thao Biti's Hunter Street Nam Màu Nâu Đậm HSM008600NAD</p>
+                    <p>699,000  &#8363;</p>
+                    <button><a href="item-10.html"><b>Xem chi tiết</b></a></button>
+                    <button onclick="addToCart('Giày Thể Thao Biti\'s Hunter Street Nam Màu Nâu Đậm HSM008600NAD', 699000, 'HSM008600NAD')"><b>Thêm vào giỏ</b></button>
+                </div> 
+                <div class="product_items">
+                    <img src="../image/item-11.jpg" alt="Sản phẩm 11">
+                    <p>Giày Thể Thao Nam BITI'SGUARDIAN COLLECTION HSM004400KEM</p>
+                    <p>746,000 &#8363;</p>
+                    <button><a href="item-11.html"><b>Xem chi tiết</b></a></button>
+                    <button onclick="addToCart('Giày Thể Thao Nam BITI\'SGUARDIAN COLLECTION HSM004400KEM', 746000, 'HSM004400KEM')"><b>Thêm vào giỏ</b></button>
+                </div> 
+                <div class="product_items">
+                    <img src="../image/item-12.jpg" alt="Sản phẩm 12">
+                    <p>Giày Đi Bộ Biti's Hunter Jogging Nam Màu Xanh Dương HSM007200XDG</p>
+                    <p>703,080  &#8363;</p>
+                    <button><a href="item-12.html"><b>Xem chi tiết</b></a></button>
+                    <button onclick="addToCart('Giày Đi Bộ Biti\'s Hunter Jogging Nam Màu Xanh Dương HSM007200XDG', 703080, 'HSM007200XDG')"><b>Thêm vào giỏ</b></button>
+                </div> 
+                <div class="product_items">
+                    <img src="../image/item-13.jpg" alt="Sản phẩm 13">
+                    <p>Giày Thể Thao Biti's Hunter X Nam Màu Kem HSM008000KEM</p>
+                    <p>970,000  &#8363;</p>
+                    <button><a href="item-13.html"><b>Xem chi tiết</b></a></button>
+                    <button onclick="addToCart('Giày Thể Thao Biti\'s Hunter X Nam Màu Kem HSM008000KEM', 970000, 'HSM008000KEM')"><b>Thêm vào giỏ</b></button>
+                </div> 
+                <div class="product_items">
+                    <img src="../image/item-14.jpg" alt="Sản phẩm 14">
+                    <p>Giày Thể Thao Biti's Hunter X Nam Màu Xám HSM008000XAM</p>
+                    <p>970,000  &#8363;</p>
+                    <button><a href="item-14.html"><b>Xem chi tiết</b></a></button>
+                    <button onclick="addToCart('Giày Thể Thao Biti\'s Hunter X Nam Màu Xám HSM008000XAM', 970000, 'HSM008000XAM')"><b>Thêm vào giỏ</b></button>
+                </div> 
+                <div class="product_items">
+                    <img src="../image/item-15.jpg" alt="Sản phẩm 15">
+                    <p>Giày Thể Thao Biti's Hunter X Nam Màu Đen HSM008000DEN</p>
+                    <p>970,000 &#8363;</p>
+                    <button><a href="item-15.html"><b>Xem chi tiết</b></a></button>
+                    <button onclick="addToCart('Giày Thể Thao Biti\'s Hunter X Nam Màu Đen HSM008000DEN', 970000, 'HSM008000DEN')"><b>Thêm vào giỏ</b></button>
+                </div> 
+                <div class="product_items">
+                    <img src="../image/item-16.jpg" alt="Sản phẩm 16">
+                    <p>Giày Thể Thao Biti's Hunter Core Nam Màu Xanh Dương Lợt HSM007800XDL</p>
+                    <p>808,170 &#8363;</p>
+                    <button><a href="item-16.html"><b>Xem chi tiết</b></a></button>
+                    <button onclick="addToCart('Giày Thể Thao Biti\'s Hunter Core Nam Màu Xanh Dương Lợt HSM007800XDL', 808170, 'HSM007800XDL')"><b>Thêm vào giỏ</b></button>
+                </div> 
+                <div class="product_items">
+                    <img src="../image/item-17.jpg" alt="Sản phẩm 17">
+                    <p>Giày Thể Thao Biti's Hunter Core Nam Màu Nâu HSM006200NAU</p>
+                    <p>693,780 &#8363;</p>
+                    <button><a href="item-17.html"><b>Xem chi tiết</b></a></button>
+                    <button onclick="addToCart('Giày Thể Thao Biti\'s Hunter Core Nam Màu Nâu HSM006200NAU', 693780, 'HSM006200NAU')"><b>Thêm vào giỏ</b></button>
+                </div> 
+                <div class="product_items">
+                    <img src="../image/item-18.jpg" alt="Sản phẩm 18">
+                    <p>Giày Thể Thao Biti's Hunter Street Nam Màu Xanh Lá Cây HSM006100XLC</p>
+                    <p>700,000 &#8363;</p>
+                    <button><a href="item-18.html"><b>Xem chi tiết</b></a></button>
+                    <button onclick="addToCart('Giày Thể Thao Biti\'s Hunter Street Nam Màu Xanh Lá Cây HSM006100XLC', 700000, 'HSM006100XLC')"><b>Thêm vào giỏ</b></button>
+                </div> 
+                <div class="product_items">
+                    <img src="../image/item-19.jpg" alt="Sản phẩm 19">
+                    <p>Giày Thể Thao Nam Biti's Hunter Core HSM007800TRG</p>
+                    <p>797,400 &#8363;</p>
+                    <button><a href="item-19.html"><b>Xem chi tiết</b></a></button>
+                    <button onclick="addToCart('Giày Thể Thao Nam Biti\'s Hunter Core HSM007800TRG', 797400, 'HSM007800TRG')"><b>Thêm vào giỏ</b></button>
+                </div> 
+                <div class="product_items">
+                    <img src="../image/item-20.jpg" alt="Sản phẩm 20">
+                    <p>Giày Thể Thao Biti's Hunter Street Nam Màu Trắng HSM006101TRG</p>
+                    <p>746,000 &#8363;</p>
+                    <button><a href="item-20.html"><b>Xem chi tiết</b></a></button>
+                    <button onclick="addToCart('Giày Thể Thao Biti\'s Hunter Street Nam Màu Trắng HSM006101TRG', 746000, 'HSM006101TRG')"><b>Thêm vào giỏ</b></button>
+                </div> 
+                <div class="product_items">
+                    <img src="../image/item-21.jpg" alt="Sản phẩm 21">
+                    <p>Giày Thể Thao Biti’s Nam Màu Xanh Dương Lợt HSM007500XDL</p>
+                    <p>791,800 &#8363;</p>
+                    <button><a href="item-21.html"><b>Xem chi tiết</b></a></button>
+                    <button onclick="addToCart('Giày Thể Thao Biti’s Nam Màu Xanh Dương Lợt HSM007500XDL', 791800, 'HSM007500XDL')"><b>Thêm vào giỏ</b></button>
+                </div> 
+                <div class="product_items">
+                    <img src="../image/item-22.jpg" alt="Sản phẩm 22">
+                    <p>Giày Thể Thao Biti's Còn Gì Dùng Đó Nam Màu Đỏ HSM006302DOO</p>
+                    <p>829,000 &#8363;</p>
+                    <button><a href="item-22.html"><b>Xem chi tiết</b></a></button>
+                    <button onclick="addToCart('Giày Thể Thao Biti\'s Còn Gì Dùng Đó Nam Màu Đỏ HSM006302DOO', 829000, 'HSM006302DOO')"><b>Thêm vào giỏ</b></button>
+                </div> 
+                <div class="product_items">
+                <img src="../image/item-23.jpg" alt="Sản phẩm 23">
+                    <p>Giày Thể Thao Biti's Còn Gì Dùng Đó Nam Màu Đỏ HSM006302DOO</p>
+                    <p>829,000 &#8363;</p>
+                    <button><a href="item-23.html"><b>Xem chi tiết</b></a></button>
+                    <button onclick="addToCart('Giày Thể Thao Biti\'s Còn Gì Dùng Đó Nam Màu Đỏ HSM006302DOO', 829000, 'HSM006302DOO')"><b>Thêm vào giỏ</b></button>
+                </div> 
+                <div class="product_items">
+                    <img src="../image/item-24.jpg" alt="Sản phẩm 24">
+                    <p>Giày Thể Thao Biti's Tet Edition 2K25 Nam Màu Kem HSM007502KEM</p>
+                    <p>1,043,100 &#8363;</p>
+                    <button><a href="item-24.html"><b>Xem chi tiết</b></a></button>
+                    <button onclick="addToCart('Giày Thể Thao Biti\'s Tet Edition 2K25 Nam Màu Kem HSM007502KEM', 1043100, 'HSM007502KEM')"><b>Thêm vào giỏ</b></button>
+                </div> 
+                <div class="product_items">
+                    <img src="../image/item-25.jpg" alt="Sản phẩm 25">
+                    <p>Giày Thể Thao Biti's Go For Love Nam Màu Trắng HSM007505TRG</p>
+                    <p>1,099,000  &#8363;</p>
+                    <button><a href="item-25.html"><b>Xem chi tiết</b></a></button>
+                    <button onclick="addToCart('Giày Thể Thao Biti\'s Go For Love Nam Màu Trắng HSM007505TRG', 1099000, 'HSM007505TRG')"><b>Thêm vào giỏ</b></button>
+                </div> 
+                <div class="product_items">
+                    <img src="../image/item-26.jpg" alt="Sản phẩm 26">
+                    <p>Giày Thể Thao Biti's Hunter Go For Love Nam Màu Nâu HSM007505NAU</p>
+                    <p>1,099,000 &#8363;</p>
+                    <button><a href="item-26.html"><b>Xem chi tiết</b></a></button>
+                    <button onclick="addToCart('Giày Thể Thao Biti\'s Hunter Go For Love Nam Màu Nâu HSM007505NAU', 1099000, 'HSM007505NAU')"><b>Thêm vào giỏ</b></button>
+                </div> 
+                <div class="product_items">
+                    <img src="../image/item-27.jpg" alt="Sản phẩm 27">
+                    <p>Giày Thể Thao Biti's BST Festive Nam Màu Xám HSM008400XAM</p>
+                    <p>970,000  &#8363;</p>
+                    <button><a href="item-27.html"><b>Xem chi tiết</b></a></button>
+                    <button onclick="addToCart('Giày Thể Thao Biti\'s BST Festive Nam Màu Xám HSM008400XAM', 970000, 'HSM008400XAM')"><b>Thêm vào giỏ</b></button>
+                </div> 
+                <div class="product_items">
+                    <img src="../image/item-28.jpg" alt="Sản phẩm 28">
+                    <p>Giày Thể Thao Biti's Basic Limited Edition Nam BSM000600</p>
+                    <p>349,680 &#8363;</p>
+                    <button><a href="item-28.html"><b>Xem chi tiết</b></a></button>
+                    <button onclick="addToCart('Giày Thể Thao Biti\'s Basic Limited Edition Nam BSM000600', 349680, 'BSM000600')"><b>Thêm vào giỏ</b></button>
+                </div> 
+                <div class="product_items">
+                    <img src="../image/item-29.jpg" alt="Sản phẩm 29">
+                    <p>Giày Thể Thao Biti's Hunter Core Nam Màu Trắng HSM004901TRG</p>
+                    <p>785,000 &#8363;</p>
+                    <button><a href="item-29.html"><b>Xem chi tiết</b></a></button>
+                    <button onclick="addToCart('Giày Thể Thao Biti\'s Hunter Core Nam Màu Trắng HSM004901TRG', 785000, 'HSM004901TRG')"><b>Thêm vào giỏ</b></button>
+                </div> 
+                <div class="product_items">
+                    <img src="../image/item-30.jpg" alt="Sản phẩm 30">
+                    <p>Giày Thể Thao Biti’s  Original Edition 2K24 Nam Màu Nâu HSM007501NAU</p>
+                    <p>791,800 &#8363;</p>
+                    <button><a href="item-30.html"><b>Xem chi tiết</b></a></button>
+                    <button onclick="addToCart('Giày Thể Thao Biti’s Original Edition 2K24 Nam Màu Nâu HSM007501NAU', 791800, 'HSM007501NAU')"><b>Thêm vào giỏ</b></button>
+                </div> 
+                <div class="product_items">
+                    <img src="../image/balo-1.jpg" alt="Sản phẩm 31">
+                    <p>Balo Biti’s Hunter – Original H Màu Đen HBBM01000DEN</p>
+                    <p>560,000 &#8363;</p>
+                    <button><a href="balo-1.html"><b>Xem chi tiết</b></a></button>
+                    <button onclick="addToCart('Balo Biti’s Hunter – Original H Màu Đen HBBM01000DEN', 560000, 'HBBM01000DEN')"><b>Thêm vào giỏ</b></button>
+                </div>
+                <div class="product_items">
+                    <img src="../image/balo-2.jpg" alt="Sản phẩm 32">
+                    <p>Balo Biti's Hunter Màu Đen HBBM01100DEN</p>
+                    <p>850,000 &#8363;</p>
+                    <button><a href="balo-2.html"><b>Xem chi tiết</b></a></button>
+                    <button onclick="addToCart('Balo Biti\'s Hunter Màu Đen HBBM01100DEN', 850000, 'HBBM01100DEN')"><b>Thêm vào giỏ</b></button>
+                </div> 
+                <div class="product_items">
+                    <img src="../image/balo-3.jpg" alt="Sản phẩm 33">
+                    <p>Balo Biti's Hunter Màu Xám Đậm HBBM01100XAD</p>
+                    <p>640,000 &#8363;</p>
+                    <button><a href="balo-3.html"><b>Xem chi tiết</b></a></button>
+                    <button onclick="addToCart('Balo Biti\'s Hunter Màu Xám Đậm HBBM01100XAD', 640000, 'HBBM01100XAD')"><b>Thêm vào giỏ</b></button>
+                </div> 
+                <div class="product_items">
+                    <img src="../image/balo-4.jpg" alt="Sản phẩm 34">
+                    <p>Balo Biti's Hunter Màu Xám Lợt HBBM00101XAL</p>
+                    <p>640,000  &#8363;</p>
+                    <button><a href="balo-4.html"><b>Xem chi tiết</b></a></button>
+                    <button onclick="addToCart('Balo Biti\'s Hunter Màu Xám Lợt HBBM00101XAL', 640000, 'HBBM00101XAL')"><b>Thêm vào giỏ</b></button>
+                </div> 
+                <div class="product_items">
+                    <img src="../image/balo-5.jpg" alt="Sản phẩm 35">
+                    <p>Balo Biti's Hunter Màu Đen HBBM00101DEN</p>
+                    <p>791,800 &#8363;</p>
+                    <button><a href="balo-5.html"><b>Xem chi tiết</b></a></button>
+                    <button onclick="addToCart('Balo Biti\'s Hunter Màu Đen HBBM00101DEN', 791800, 'HBBM00101DEN')"><b>Thêm vào giỏ</b></button>
+                </div> 
+                <div class="product_items">
+                    <img src="../image/balo-6.jpg" alt="Sản phẩm 36">
+                    <p>Balo Biti's Màu Đen BBBM00600DEN</p>
+                    <p>200,000 &#8363;</p>
+                    <button><a href="balo-6.html"><b>Xem chi tiết</b></a></button>
+                    <button onclick="addToCart('Balo Biti\'s Màu Đen BBBM00600DEN', 200000, 'BBBM00600DEN')"><b>Thêm vào giỏ</b></button>
+                </div> 
+                <div class="product_items">
+                    <img src="../image/balo-7.jpg" alt="Sản phẩm 37">
+                    <p>Balo Biti's Màu Đen BBBM00801DEN</p>
+                    <p>630,000 &#8363;</p>
+                    <button><a href="balo-7.html"><b>Xem chi tiết</b></a></button>
+                    <button onclick="addToCart('Balo Biti\'s Màu Đen BBBM00801DEN', 630000, 'BBBM00801DEN')"><b>Thêm vào giỏ</b></button>
+                </div> 
+                <div class="product_items">
+                    <img src="../image/balo-8.jpg" alt="Sản phẩm 38">
+                    <p>Balo Biti's Màu Xám BBBM00600XAM</p>
+                    <p>200,000 &#8363;</p>
+                    <button><a href="balo-8.html"><b>Xem chi tiết</b></a></button>
+                    <button onclick="addToCart('Balo Biti\'s Màu Xám BBBM00600XAM', 200000, 'BBBM00600XAM')"><b>Thêm vào giỏ</b></button>
+                    </div> 
+                <div class="product_items">
+                    <img src="../image/tui-1.jpg" alt="Sản phẩm 39">
+                    <p>Túi Biti's Hunter Màu Đỏ HBSM00101DOO</p>
+                    <p>255,200 &#8363;</p>
+                    <button><a href="tui-1.html"><b>Xem chi tiết</b></a></button>
+                    <button onclick="addToCart('Túi Biti\'s Hunter Màu Đỏ HBSM00101DOO', 255200, 'HBSM00101DOO')"><b>Thêm vào giỏ</b></button>
+                </div> 
+                <div class="product_items">
+                    <img src="../image/tui-2.jpg" alt="Sản phẩm 40">
+                    <p>Túi Biti’s Hunter – Original H Màu Xám HBBM00900XAM</p>
+                    <p>336,000 &#8363;</p>
+                    <button><a href="tui-2.html"><b>Xem chi tiết</b></a></button>
+                    <button onclick="addToCart('Túi Biti’s Hunter – Original H Màu Xám HBBM00900XAM', 336000, 'HBBM00900XAM')"><b>Thêm vào giỏ</b></button>
+                </div> 
+                <div class="product_items">
+                    <img src="../image/tui-3.jpg" alt="Sản phẩm 41">
+                    <p>Túi Biti's Hunter Màu Đỏ HBSM00101DOO</p>
+                    <p>429,000 &#8363;</p>
+                    <button><a href="tui-3.html"><b>Xem chi tiết</b></a></button>
+                    <button onclick="addToCart('Túi Biti\'s Hunter Màu Đỏ HBSM00101DOO', 429000, 'HBSM00101DOO')"><b>Thêm vào giỏ</b></button>
+                </div> 
+                <div class="product_items">
+                    <img src="../image/tui-4.jpg" alt="Sản phẩm 42">
+                    <p>Túi Đai Chạy Bộ Biti's Hunter Màu Xanh Mi Nơ ATUH00201XMN</p>
+                    <p>120,000 &#8363;</p>
+                    <button><a href="tui-4.html"><b>Xem chi tiết</b></a></button>
+                    <button onclick="addToCart('Túi Đai Chạy Bộ Biti\'s Hunter Màu Xanh Mi Nơ ATUH00201XMN', 120000, 'ATUH00201XMN')"><b>Thêm vào giỏ</b></button>
+                </div> 
+                <div class="product_items">
+                    <img src="../image/tui-5.jpg" alt="Sản phẩm 43">
+                    <p>Túi Đeo Chạy Bộ Biti's Hunter Màu Cam ATUH00201CAM</p>
+                    <p>120,000 &#8363;</p>
+                    <button><a href="tui-5.html"><b>Xem chi tiết</b></a></button>
+                    <button onclick="addToCart('Túi Đeo Chạy Bộ Biti\'s Hunter Màu Cam ATUH00201CAM', 120000, 'ATUH00201CAM')"><b>Thêm vào giỏ</b></button>
+                </div> 
+                <div class="product_items">
+                    <img src="../image/tui-6.jpg" alt="Sản phẩm 44">
+                    <p>Túi Đeo Chéo Biti's Hunter Nam Màu Đen HBSM00600DEN</p>
+                    <p>399,000 &#8363;</p>
+                    <button><a href="tui-6.html"><b>Xem chi tiết</b></a></button>
+                    <button onclick="addToCart('Túi Đeo Chéo Biti\'s Hunter Nam Màu Đen HBSM00600DEN', 399000, 'HBSM00600DEN')"><b>Thêm vào giỏ</b></button>
+                </div> 
+                <div class="product_items">
+                    <img src="../image/tui-7.jpg" alt="Sản phẩm 45">
+                    <p>Túi Đeo hông Biti’s Hunter – Original H Màu Đen HBSM00400DEN</p>
+                    <p>351,200 &#8363;</p>
+                    <button><a href="tui-7.html"><b>Xem chi tiết</b></a></button>
+                    <button onclick="addToCart('Túi Đeo hông Biti’s Hunter – Original H Màu Đen HBSM00400DEN', 351200, 'HBSM00400DEN')"><b>Thêm vào giỏ</b></button>
+                </div> 
+                <div class="product_items">
+                    <img src="../image/tui-8.jpg" alt="Sản phẩm 46">
+                    <p>Túi Xách Biti's Hunter Màu Đen HBSM00101DEN</p>
+                    <p>429,000 &#8363;</p>
+                    <button><a href="tui-8.html"><b>Xem chi tiết</b></a></button>
+                    <button onclick="addToCart('Túi Xách Biti\'s Hunter Màu Đen HBSM00101DEN', 429000, 'HBSM00101DEN')"><b>Thêm vào giỏ</b></button>
+                </div> 
+                <div class="product_items">
+                    <img src="../image/mu-1.jpg" alt="Sản phẩm 47">
+                    <p>Mũ lưỡi trai Biti’s Hunter – Original H Màu Đen AHUH00010DEN</p>
+                    <p>132,000 &#8363;</p>
+                    <button><a href="mu-1.html"><b>Xem chi tiết</b></a></button>
+                    <button onclick="addToCart('Mũ lưỡi trai Biti’s Hunter – Original H Màu Đen AHUH00010DEN', 132000, 'AHUH00010DEN')"><b>Thêm vào giỏ</b></button>
+                </div> 
+                <div class="product_items">
+                    <img src="../image/mu-2.jpg" alt="Sản phẩm 48">
+                    <p>Mũ lưỡi trai Biti’s Hunter – Original H Màu Trắng AHUH00010TRG</p>
+                    <p>132,000 &#8363;</p>
+                    <button><a href="mu-2.html"><b>Xem chi tiết</b></a></button>
+                    <button onclick="addToCart('Mũ lưỡi trai Biti’s Hunter – Original H Màu Trắng AHUH00010TRG', 132000, 'AHUH00010TRG')"><b>Thêm vào giỏ</b></button>
+                </div>
+        </div>
+        
+        <!-- Các nút phân trang -->
+        <ul class="pagination">
+            <li class="pagination-item prev-button">
+                <a href="#" class="pagination-item-link">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </a>
+            </li>
+                <li class="pagination-item next-button">
+                <a href="#" class="pagination-item-link">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </a>
+            </li>
+        </ul>
+    </main>
+
+    <footer id="lienhe">
+            <!-- Liên hệ -->
+            <div class="footer-left">
+                <h3>LIÊN HỆ</h3>
+                <p><strong>Địa chỉ:</strong> Âu Cơ, Tân Bình, Thành phố Hồ Chí Minh.</p>
+                <p><strong>fanpage</strong> SHO Store - Official.</p>
+                <p><strong>Email:</strong> chamsockhachhang@sho-official.com.vn.</p>
+                <p><strong>Hotline:</strong> 0123456789.</p>
+            </div>
+            <!-- Bản quyền -->
+            <div class="footer-right">
+                <h4>&copy; 2025 SHO, Inc. All rights reserved</h4>
+            </div>
+
+    </footer>
+    <script src="../js/Products.js"></script>
+    <script src="../js/cart.js"></script>
+    <script src="../js/search.js"></script>
+    <script src="../js/log.js"></script>
+</body>
+</html>

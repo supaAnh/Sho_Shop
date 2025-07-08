@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>Quản trị Admin - SHO Store</title>
+  <link rel="stylesheet" href="../css/admin.css"/>
+</head>
+<body>
+  <header>
+    <h1>TRANG QUẢN TRỊ ADMIN</h1>
+  </header>
+
+  <main>
+    <section class="admin-panel">
+      <h2>Thêm sản phẩm mới</h2>
+      <form id="addProductForm">
+        <input type="text" id="productName" placeholder="Tên sản phẩm" required />
+        <input type="number" id="productPrice" placeholder="Giá sản phẩm" required />
+        <input type="text" id="productImage" placeholder="Link ảnh sản phẩm" required />
+        <button type="submit">Thêm sản phẩm</button>
+      </form>
+    </section>
+
+    <section class="product-list">
+      <h2>Danh sách sản phẩm</h2>
+      <div id="productsContainer"></div>
+    </section>
+
+    <section class="order-list">
+      <h2>Đơn hàng đã bán</h2>
+      <button id="viewOrdersBtn">Xem đơn hàng</button>
+      <div id="ordersContainer"></div>
+    </section>
+  </main>
+
+  <input onclick="Products_Back()" class="Products-Back" type="button" value="Trở về">
+
+  <script src="../js/admin.js"></script>
+</body>
+</html>

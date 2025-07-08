@@ -1,0 +1,321 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+a:hover {
+    color: #808080;
+}
+
+header {
+    padding: 20px 50px;
+    height: 70px;
+    position: relative;
+    background-color: #F8F8FF;
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+
+/* Logo */
+.logo {
+    float: left;
+    width: 25%;
+    font-weight: bolder;
+}
+
+.logo > p {
+    margin-top: -5%;
+    font-size: 50px;
+    font-style: oblique;
+}
+
+/* Menu */
+.menu {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    white-space: nowrap;
+}
+
+.menu > li {
+    padding: 0 12px;
+    display: inline-block;
+    margin-right: 24px;
+}
+
+.menu > li:last-child {
+    margin-right: 0;
+}
+
+.menu > li > a:hover {
+    color: #000000;
+    border: none;
+    border-bottom: 2px solid #000000;
+} 
+
+/* Others */
+.others {
+    float: right;
+    width: 25%;
+    text-align: right;
+}
+
+.others > li {
+    display: inline-block;
+    padding: 0 12px;
+    border: none;
+    border-right: 2px solid #000000;
+}
+
+.others > li:last-child {
+    border-right: none;
+}
+
+.others > li:first-child {
+    position: relative;
+}
+
+.others > li:first-child input {
+    width: 100%;
+    height: 125%;
+    border: none;
+    border-bottom: 1px solid #333;
+    background-color: #F8F8FF;
+}
+
+.others > li:first-child i {
+    position: absolute;
+    right: 15px;
+    top: 55%;
+    transform: translateY(-50%);
+}
+
+main {
+    margin: 0;
+    font-family: monospace;
+}
+
+footer {
+    padding: 40px 80px;
+    background-color: #F8F8FF;
+    position: relative;
+    overflow: hidden;
+}
+
+.footer-left {
+    float: left;
+    width: 70%;
+    text-align: left;
+}
+
+.footer-left p {
+    margin: 6px 0;
+    line-height: 1.6;
+}
+
+.footer-right {
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    text-align: right;
+    background-color: none;
+    padding: 5px 10px;
+}
+
+.footer-right p {
+    margin: 0;
+}
+
+/* Android */
+@media (max-width: 600px) {
+    header {
+        padding: 10px 20px;
+        height: auto;
+    }
+
+    .logo {
+        float: none;
+        width: 100%;
+        font-size: 30px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .menu {
+        position: static;
+        width: 70%;
+        text-align: center;
+        margin-left: 50%;
+    }
+
+    .menu > li {
+        display: inline-block;
+        padding: 15px 0;
+        margin-right: 15px;
+    }
+
+    .menu > li:last-child {
+        margin-bottom: 0;
+    }
+
+    .others {
+        float: none;
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .others > li {
+        padding: 0 8px;
+    }
+    
+    .others > li:first-child input {
+        width: 100%;
+    }
+
+    footer {
+        padding: 20px 20px;
+    }
+
+    .footer-left {
+        float: none;
+        width: 100%;
+        transform: translateX(0);
+        text-align: center;
+    }
+
+    .footer-right {
+        position: static;
+        text-align: center;
+        padding: 10px 0;
+    }
+}
+
+/* tablet */
+@media (min-width: 601px) and (max-width: 1024px) {
+
+    header {
+        padding: 10px 5px;
+        height: auto;
+    }
+
+    .menu {
+        left: 45%;
+    }
+
+    .menu > li {
+        display: inline-block;
+        margin-right: 5px;
+    }
+
+    .others {
+        float: none;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .others > li:first-child input {
+        width: 70%;
+    }
+
+    .footer-left {
+        width: 50%;
+        transform: translateX(40px);
+    }
+
+    .footer-right {
+        float: right;
+        position: static;
+        padding: 0;
+    }
+}
+
+.login-form {
+    max-width: 400px;
+    margin: 80px auto;
+    padding: 40px 30px;
+    background-color: #ffffff;
+    box-shadow: 0 0 24px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login-form h2 {
+    margin-bottom: 24px;
+    font-size: 28px;
+    color: #333;
+    text-align: center;
+}
+
+.login-form form input[type="text"], .login-form form input[type="password"] {
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.login-form form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #000000;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-form form button:hover {
+    background-color: #000000;
+}
+
+.login-form .forgot {
+    margin-top: 12px;
+}
+
+.login-form .forgot a {
+    font-size: 14px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.login-form .forgot a:hover {
+    text-decoration: underline;
+    color: #808080;
+}
+
+.password-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.password-wrapper input {
+    width: 100%;
+    padding-right: 40px;
+}
+
+.password-wrapper i {
+    position: absolute;
+    right: 12px;
+    top: 37%;
+    transform: translateY(-50%);
+    color: #666;
+}
