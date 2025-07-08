@@ -134,25 +134,3 @@ if (nextButton) {
   });
 }
 
-// Bộ lọc giá
-const priceFilters = document.querySelectorAll('.price-filter');
-
-priceFilters.forEach(filter => {
-  filter.addEventListener('change', () => {
-    filterByPrice();
-  });
-});
-
-function filterByPrice() {
-  const selected = document.querySelector('.price-filter:checked').value;
-  const [min, max] = selected === 'all' ? [0, Infinity] : selected.split('-').map(Number);
-
-  filteredProducts = allProducts.filter(item => {
-    const priceText = item.innerText;
-    const price = getPriceFromText(priceText);
-    return price >= min && price <= max;
-  });
-
-  currentPage = 1;
-  paginate();
-}
