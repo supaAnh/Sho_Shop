@@ -162,7 +162,7 @@ function addToCart(productName, productPrice, productId) {
     // check đăng nhập
     if (!isLoggedIn) {
         alert("Bạn cần đăng nhập để thêm sản phẩm vào giỏ hàng!");
-        window.location.href = "signIn.html";
+        window.location.href = "../account/signIn.html";
         return;
     }
 
