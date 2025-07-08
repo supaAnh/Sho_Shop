@@ -166,12 +166,25 @@ function addToCart(productName, productPrice, productId) {
         return;
     }
 
-    // yêu cầu chọn size
-    const size = prompt("Vui lòng chọn size (ví dụ: 38, 39, 40...):");
+    const size = prompt("Vui lòng chọn size (37, 38, 39, 40, 41, 42):");
+
+    // Nếu không nhập hoặc bỏ trống
     if (!size || size.trim() === "") {
         alert("Bạn phải chọn size trước khi thêm vào giỏ hàng!");
         return;
     }
+
+    // Danh sách size cho phép
+    const allowedSizes = ["37", "38", "39", "40", "41", "42"];
+
+    // Kiểm tra size nhập có hợp lệ không
+    if (!allowedSizes.includes(size.trim())) {
+        alert("Size bạn nhập không hợp lệ! Vui lòng chọn đúng các size (37 - 42).");
+        return;
+    }
+
+    // nếu ok tiếp tục xử lý giỏ hàng
+    console.log("Size đã chọn:", size);
 
     // lấy giỏ hàng từ localStorage
     let cart = getCart();
