@@ -16,7 +16,7 @@ function updateUserIcon() {
             // Nếu chưa đăng nhập, đảm bảo icon là fa-user
             userIcon.classList.remove("fa-user-check");
             userIcon.classList.add("fa-user");
-            userIcon.href = "../signIn.html"; // Link đến trang đăng nhập
+            userIcon.href = "../account/signIn.html"; // Link đến trang đăng nhập
             userIcon.title = "Đăng nhập";
         }
     }
